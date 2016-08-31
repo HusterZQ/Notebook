@@ -8,3 +8,10 @@
                        clog   用于产生程序执行的一般信息
     一般情况下，系统会把这些对象与执行程序的窗口相联系起来。而大部分操作系统都提供了重定向输入和输出流的方法。利用重定向可以把这些
     流和所选择的文件联系起来。
+
+4.Linux下编译C语言程序：gcc filename -o outputfilename
+                        gcc -Wall filename -o outputfilenmae     -Wall表示把所有的编译提示信息都输出显示给程序员
+  Linux下编译C++程序  ：g++ filename -o outputfilename
+                        g++ -Wall filename -o outputfilename    
+                        (Linux用gcc命令编译c++程序会产生错误，因为在linux下，gcc只能编译源代码而不能链接库，所以如果使用了iostream)
+                        (程序会报错，没有链接到iostream库，此时要利用g++命令，g++命令会调用gcc编译器编译代码，然后把库链接过来。)
